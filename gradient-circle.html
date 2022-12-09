@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="vulcan">
+        <svg width="100%" height="100%" viewBox="0 0 300 400">
+          <defs>
+            <linearGradient
+              id="gradient"
+              x1="0%"
+              y1="0%"
+              x2="0%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="#228B22" />
+              <stop offset="100%" stop-color="#00FF00" />
+            </linearGradient>
+          </defs>
+          <circle
+            id="grad"
+            cx="130"
+            cy="130"
+            r="130"
+            fill="url(#gradient)"
+          />
+          <image
+            x="-20"
+            y="-90"
+            width="300"
+            height="450"
+            xlink:href="reggie-small.png"
+            preserveAspectRatio="xMidYMid meet"
+          />
+        </svg>
+
+        <style>
+          body {
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+          }
+
+          div.vulcan {
+            width: 300px;
+            height: 400px;
+          }
+          div.center {
+            display: grid;
+            place-content: center;
+          }
+
+          image {
+            clip-path: circle(150px at 150px 200px);
+          }
+        </style>
+      </div>
+    </div>
+  </body>
+</html>
